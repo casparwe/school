@@ -75,6 +75,8 @@ class Matris{
 
      T & operator()(unsigned row,unsigned col);
 
+     const T & operator()(unsigned row,unsigned col);
+
 
 
 
@@ -384,6 +386,12 @@ Matris<T> Matris<T>::operator- (const Matris<T> & Mat){
 template <class T>
 T & Matris<T>::operator()(unsigned row,unsigned col){
   return m_vec[row*m_cols + col];
+}
+
+template <class T>
+const T & Matris<T>::operator()(unsigned row,unsigned col){
+  const T tmp= m_vec[row*m_cols + col];
+  return tmp;
 }
 
 template <class T>
