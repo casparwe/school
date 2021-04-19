@@ -1,0 +1,3 @@
+diamond inherritance for queen
+shared pointer
+chessboard io
