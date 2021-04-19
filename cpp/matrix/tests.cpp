@@ -1,5 +1,6 @@
 #include "matris.h"
-#include <iostream>
+
+#include <algorithm>
 
 int main() {
 
@@ -126,6 +127,14 @@ int main() {
   Matris4.print();
 
   Matris5.print();
+
+  std::cout<<"-------------------"<<std::endl;
+
+  std::cout<<"expecting previous sorted"<<std::endl;
+
+  std::sort(Matris4.begin(),Matris4.end());
+
+  Matris4.print();
 
   std::cout<<"-------------------"<<std::endl;
 

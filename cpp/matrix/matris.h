@@ -65,7 +65,7 @@ class Matris{
 
      // operators
 
-     const Matris<T>& operator= (const Matris<T> & Mat);
+     const Matris<T> & operator= (const Matris<T> & Mat);
 
      void operator+= (const Matris<T> & Mat);
 
@@ -75,7 +75,7 @@ class Matris{
 
      T & operator()(unsigned row,unsigned col);
 
-     const T & operator()(unsigned row,unsigned col);
+     //const T & operator()(unsigned row,unsigned col);
 
 
 
@@ -388,11 +388,12 @@ T & Matris<T>::operator()(unsigned row,unsigned col){
   return m_vec[row*m_cols + col];
 }
 
+/*
 template <class T>
 const T & Matris<T>::operator()(unsigned row,unsigned col){
   const T tmp= m_vec[row*m_cols + col];
   return tmp;
-}
+}*/
 
 template <class T>
 std::ostream& operator<<(std::ostream& os, Matris<T> & Mat) {

@@ -32,5 +32,8 @@ if you want a read only access tool
 
 #### Is it possible to call std::sort() to sort your matrix using begin() and end()?
 
+yes
 
 #### What other kind of iterators, besides random access iterators, are there in C++?
+
+input, output, forward, bidirectional
